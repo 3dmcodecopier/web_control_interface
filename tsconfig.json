@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    //"declaration": true,  //// xjl add
+    //"resolveJsonModule": true,
+    //"declarationDir": "src/types",
+
+    "target": "esnext",
+
+    //"target": "es5",
+    "module": "esnext",
+    //"module": "commonjs",
+    //"outDir": "./js",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "typeRoots": ["./src/types"],
+    "types": [
+      "webpack-env"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+
+
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "node_modules/vue-grid-layout/dist/vue-grid-item.d.ts",
+    "/node_modules/@antv/g2plot/lib/index.d.ts",
+    "src/types/g2plot/g2plot.d.ts",
+    "src/types/g2plot/global.d.ts",
+    "node_modules/@types/pubsub-js/index.d.ts",
+    "node_modules/@types/pubsub-js/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
